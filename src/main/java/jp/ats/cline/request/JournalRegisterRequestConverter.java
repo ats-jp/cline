@@ -9,12 +9,12 @@ import java.util.UUID;
 import org.blendee.jdbc.BlendeeManager;
 
 import jp.ats.blackbox.common.U;
-import jp.ats.blackbox.persistence.Requests.DetailRegisterRequest;
-import jp.ats.blackbox.persistence.Requests.JournalRegisterRequest;
-import jp.ats.blackbox.persistence.Requests.NodeRegisterRequest;
-import jp.ats.blackbox.persistence.SecurityValues;
-import jp.ats.blackbox.stock.StockHandler;
-import jp.ats.blackbox.stock.StockHandler.StockComponents;
+import jp.ats.blackbox.core.persistence.SecurityValues;
+import jp.ats.blackbox.core.persistence.Requests.DetailRegisterRequest;
+import jp.ats.blackbox.core.persistence.Requests.JournalRegisterRequest;
+import jp.ats.blackbox.core.persistence.Requests.NodeRegisterRequest;
+import jp.ats.blackbox.stock.persistence.StockHandler;
+import jp.ats.blackbox.stock.persistence.StockHandler.StockComponents;
 
 public class JournalRegisterRequestConverter {
 
@@ -54,8 +54,8 @@ public class JournalRegisterRequestConverter {
 				}
 
 				@Override
-				public UUID itemId() {
-					return Objects.requireNonNull(request.item_id);
+				public UUID skuId() {
+					return Objects.requireNonNull(request.sku_id);
 				}
 
 				@Override

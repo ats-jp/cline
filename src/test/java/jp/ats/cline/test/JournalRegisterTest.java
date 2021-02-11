@@ -16,8 +16,8 @@ import org.blendee.util.Blendee;
 import com.google.gson.Gson;
 
 import jp.ats.blackbox.common.U;
-import jp.ats.blackbox.persistence.InOut;
-import jp.ats.blackbox.persistence.SecurityValues;
+import jp.ats.blackbox.core.persistence.InOut;
+import jp.ats.blackbox.core.persistence.SecurityValues;
 import jp.ats.cline.request.ClDetailRegisterRequest;
 import jp.ats.cline.request.ClJournalRegisterRequest;
 import jp.ats.cline.request.ClNodeRegisterRequest;
@@ -60,12 +60,12 @@ public class JournalRegisterTest {
 		out.in_out = InOut.OUT;
 		out.quantity = BigDecimal.ONE;
 		out.group_id = groupId;
-		out.item_id = U.NULL_ID;
+		out.sku_id = U.NULL_ID;
 
 		in.in_out = InOut.IN;
 		in.quantity = BigDecimal.ONE;
 		in.group_id = groupId;
-		in.item_id = U.NULL_ID;
+		in.sku_id = U.NULL_ID;
 
 		var bundle = new ClDetailRegisterRequest();
 

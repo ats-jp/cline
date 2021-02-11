@@ -7,8 +7,8 @@ import java.util.UUID;
 import org.blendee.sql.Placeholder;
 
 import jp.ats.blackbox.common.U;
-import jp.ats.blackbox.controller.JournalController.PrivilegeException;
-import jp.ats.blackbox.persistence.Requests.JournalRegisterRequest;
+import jp.ats.blackbox.core.controller.JournalController.PrivilegeException;
+import jp.ats.blackbox.core.persistence.Requests.JournalRegisterRequest;
 import sqlassist.bb.relationships;
 
 public class RegisterRequestConverter {

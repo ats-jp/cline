@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Optional;
 import java.util.UUID;
 
-import jp.ats.blackbox.persistence.InOut;
+import jp.ats.blackbox.core.persistence.InOut;
 
 public class ClNodeRegisterRequest {
 
@@ -18,7 +18,7 @@ public class ClNodeRegisterRequest {
 	 * SKU、個品
 	 * 必須
 	 */
-	public UUID item_id;
+	public UUID sku_id;
 
 	/**
 	 * 所有者
